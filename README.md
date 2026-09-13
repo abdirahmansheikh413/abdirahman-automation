@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Abdirahman Automation
 
-## Getting Started
+One-page site for a small AI automation and business systems service.
+Built with Next.js (App Router), TypeScript, and Tailwind CSS. No database, auth, or backend.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Personalize
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Most details live in [`src/lib/site.ts`](src/lib/site.ts): email, optional photo, optional LinkedIn.
+Section copy lives in [`src/components/sections/`](src/components/sections/), one file per section.
 
-## Learn More
+## Contact form
 
-To learn more about Next.js, take a look at the following resources:
+The form works two ways:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **No setup (default):** submitting opens the visitor's email app with their message filled in,
+  addressed to `site.email`.
+- **Recommended:** create a free form at a service like Formspree, then set
+  `NEXT_PUBLIC_FORM_ENDPOINT` to its URL (locally in `.env.local`, and in your host's environment
+  variables). Submissions are then sent without leaving the page.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+See [`.env.example`](.env.example).
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Push to GitHub and import the repo at https://vercel.com/new, or run `npx vercel` from this folder.
+Set `NEXT_PUBLIC_SITE_URL` to your final domain so link previews use the right address.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Structure
+
+```
+src/
+  app/                layout, page, globals.css, icon, Open Graph image
+  components/layout/  Header, Footer
+  components/sections/ one component per page section
+  components/ui/      Container, ButtonLink, SectionHeading, Reveal, Logo
+  lib/site.ts         site-wide details to personalize
+```
