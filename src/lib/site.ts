@@ -22,8 +22,8 @@ export const site: SiteConfig = {
   owner: "Abdirahman",
   description:
     "I help local businesses respond to leads faster, stay organized, and stop potential customers from getting forgotten.",
-  email: "hello@example.com",
+  email: "abdirahmansheikh413@gmail.com",
   photo: "",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/abdirahman-sheikh-034185296/",
   formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "",
 };

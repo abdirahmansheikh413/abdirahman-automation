@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Handshake, Mail } from "lucide-react";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
@@ -49,6 +49,20 @@ export function Contact() {
               {site.email}
             </a>
           </p>
+          {site.linkedin && (
+            <p className="mt-3 flex items-center gap-2 text-sm text-muted">
+              <Handshake aria-hidden="true" className="size-4 text-dim" strokeWidth={1.75} />
+              Or connect on{" "}
+              <a
+                href={site.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-soft underline decoration-white/20 underline-offset-4 transition-colors hover:decoration-accent-400"
+              >
+                LinkedIn
+              </a>
+            </p>
+          )}
         </Reveal>
 
         <Reveal delay={120}>
