@@ -187,6 +187,64 @@
   }
 }
 
+/* ---------- Hero pipeline ----------
+   The offer in one line: a lead arrives, moves through the system, and stops at the owner. */
+
+.hero-pipeline .hero-pipe {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-pipeline .hero-pipe::after {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  left: -45%;
+  width: 45%;
+  opacity: 0;
+  background: linear-gradient(to right, transparent, rgb(179 200 255 / 0.95), transparent);
+}
+
+@keyframes node-glow {
+  0%,
+  100% {
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06);
+  }
+  45% {
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.06),
+      0 0 24px -5px rgb(95 137 242 / 0.6);
+  }
+}
+
+@keyframes node-glow-human {
+  0%,
+  100% {
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06);
+  }
+  45% {
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.06),
+      0 0 24px -5px rgb(82 201 156 / 0.6);
+  }
+}
+
+@media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+  .hero-pipeline .hero-pipe::after {
+    animation: flow-x 3.4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.42s + 1.1s);
+  }
+
+  .hero-pipeline .hero-node {
+    animation: node-glow 3.4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.42s + 0.95s);
+  }
+
+  .hero-pipeline .hero-node[data-human="true"] {
+    animation-name: node-glow-human;
+  }
+}
+
 /* ---------- Scroll reveal ----------
    Only hides content when JS can reveal it again, and never for reduced-motion users. */
 

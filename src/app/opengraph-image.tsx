@@ -5,7 +5,7 @@ export const alt = `${site.name} · ${site.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const steps = ["Capture", "Organize", "Draft", "Human approval", "Follow-up"];
+const steps = ["Capture", "Organize", "Draft", "Your approval", "Follow-up"];
 
 export default function OpengraphImage() {
   return new ImageResponse(
@@ -55,12 +55,12 @@ export default function OpengraphImage() {
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 76, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.04em", color: "#ffffff" }}>
-            Stop Letting Good Leads Get Forgotten.
+          <div style={{ fontSize: 64, fontWeight: 700, lineHeight: 1.07, letterSpacing: "-0.04em", color: "#ffffff" }}>
+            Stop losing customers between the first message and the follow-up.
           </div>
-          <div style={{ marginTop: 24, fontSize: 28, lineHeight: 1.4, color: "#9aa3b3", maxWidth: 900 }}>
-            Simple AI-powered systems that help local businesses capture, organize, respond to, and follow up with
-            new leads.
+          <div style={{ marginTop: 24, fontSize: 26, lineHeight: 1.4, color: "#9aa3b3", maxWidth: 940 }}>
+            Simple systems for service businesses: capture every lead, organize the details, and draft a reply
+            you approve.
           </div>
         </div>
 

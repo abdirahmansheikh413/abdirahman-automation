@@ -24,6 +24,10 @@ const expectations = [
     title: "Tools that fit",
     description: "Where it makes sense, I build around tools you already use instead of adding new ones.",
   },
+  {
+    title: "Remote by default",
+    description: "Calls, screen shares, and written updates you can re-read — no site visits required.",
+  },
 ];
 
 export function Approach() {
@@ -66,7 +70,7 @@ export function Approach() {
           ))}
         </ol>
 
-        <ul className="mt-12 grid gap-8 border-t border-white/[0.06] pt-10 md:grid-cols-3">
+        <ul className="mt-12 grid gap-8 border-t border-white/[0.06] pt-10 sm:grid-cols-2 lg:grid-cols-4">
           {expectations.map((item, index) => (
             <Reveal as="li" key={item.title} delay={index * 80}>
               <h3 className="font-semibold text-white">{item.title}</h3>

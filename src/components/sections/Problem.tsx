@@ -45,7 +45,7 @@ export function Problem() {
             id="problem-title"
             eyebrow="The problem"
             title="Most businesses don’t need more software. They need fewer things falling through the cracks."
-            intro="When you’re busy doing the actual work, the admin around new customers is the first thing to slip. It’s rarely one big failure. It’s a handful of small gaps that quietly add up."
+            intro="When you’re busy doing the actual work, the admin around new customers is the first thing to slip. It’s rarely one big failure. It’s a handful of small gaps between the first message and the follow-up that quietly add up."
           />
         </Reveal>
 

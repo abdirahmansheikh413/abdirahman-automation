@@ -7,6 +7,7 @@ const facts = [
   { label: "Studying", value: "Computer Information Systems" },
   { label: "School", value: "Georgia State University" },
   { label: "Focus", value: "AI automation & business systems" },
+  { label: "Works", value: "Remote, with businesses anywhere" },
 ];
 
 const interests = ["AI automation", "Business systems", "APIs", "Digital transformation"];
@@ -64,13 +65,13 @@ export function About() {
             Hi, I’m {site.owner}.
           </h2>
           <p className="mt-6 text-pretty text-lg leading-relaxed text-soft/90">
-            I’m Abdirahman, a Computer Information Systems student at Georgia State University focused on AI
-            automation and business systems. I enjoy understanding how businesses operate and building technology
-            that removes friction from everyday work.
+            I’m a Computer Information Systems student at Georgia State University, focused on AI automation and
+            business systems. I work remotely with service businesses anywhere, and I start by understanding how
+            the business actually runs before building anything.
           </p>
           <p className="mt-4 text-pretty leading-relaxed text-muted">
             I keep projects focused, explain things in plain language, and only take on work I’m confident I can
-            deliver well.
+            deliver well. If a system wouldn’t genuinely help you, I’d rather say so than sell it.
           </p>
           <ul className="mt-8 flex flex-wrap gap-2">
             {interests.map((interest) => (

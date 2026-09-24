@@ -6,7 +6,8 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 const services: { title: string; description: string; icon: LucideIcon }[] = [
   {
     title: "Lead Capture Systems",
-    description: "Bring form submissions, emails, and messages into one reliable place so no request slips by.",
+    description:
+      "Bring form submissions, emails, texts, and social messages into one reliable place so no request slips by.",
     icon: Inbox,
   },
   {
@@ -45,7 +46,7 @@ export function Services() {
             id="services-title"
             eyebrow="What I build"
             title="Small systems that handle the busywork around new customers."
-            intro="Each one can stand on its own or work together. The goal is always the smallest system that solves the real problem."
+            intro="The Lead Response System is the usual starting point. These are the pieces it’s built from — each one works on its own too. The goal is always the smallest system that solves the real problem."
           />
         </Reveal>
 
