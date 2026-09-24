@@ -59,8 +59,8 @@ export default function OpengraphImage() {
             Stop losing customers between the first message and the follow-up.
           </div>
           <div style={{ marginTop: 24, fontSize: 26, lineHeight: 1.4, color: "#9aa3b3", maxWidth: 940 }}>
-            Simple systems for service businesses: capture every lead, organize the details, and draft a reply
-            you approve.
+            Simple systems for local service businesses: capture every lead, organize the details, and draft a
+            reply you approve.
           </div>
         </div>
 

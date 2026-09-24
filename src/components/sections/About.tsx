@@ -7,7 +7,7 @@ const facts = [
   { label: "Studying", value: "Computer Information Systems" },
   { label: "School", value: "Georgia State University" },
   { label: "Focus", value: "AI automation & business systems" },
-  { label: "Works", value: "Remote, with businesses anywhere" },
+  { label: "Works with", value: "Local service businesses" },
 ];
 
 const interests = ["AI automation", "Business systems", "APIs", "Digital transformation"];
@@ -66,8 +66,8 @@ export function About() {
           </h2>
           <p className="mt-6 text-pretty text-lg leading-relaxed text-soft/90">
             I’m a Computer Information Systems student at Georgia State University, focused on AI automation and
-            business systems. I work remotely with service businesses anywhere, and I start by understanding how
-            the business actually runs before building anything.
+            business systems. I work with local service businesses, and I start by understanding how the
+            business actually runs before building anything.
           </p>
           <p className="mt-4 text-pretty leading-relaxed text-muted">
             I keep projects focused, explain things in plain language, and only take on work I’m confident I can

@@ -56,7 +56,7 @@ export function LeadResponseSystem() {
             id="lead-response-title"
             eyebrow="The core system"
             title="The Lead Response System"
-            intro="This is the system most service businesses need first. It covers the gap between a customer’s first message and your follow-up — the place where good leads quietly disappear."
+            intro="This is the system most local service businesses need first. It covers the gap between a customer’s first message and your follow-up — the place where good leads quietly disappear."
           />
         </Reveal>
 

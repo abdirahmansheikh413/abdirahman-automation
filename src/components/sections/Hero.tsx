@@ -19,11 +19,11 @@ const industries = [
   "Cleaning",
   "Home repair",
   "Contractors",
+  "Painting",
   "Moving",
   "Auto detailing",
   "Salons & spas",
   "Tutoring",
-  "Studios & agencies",
 ];
 
 const pipeline: { label: string; icon: LucideIcon; human?: boolean }[] = [
@@ -100,7 +100,7 @@ export function Hero() {
       <Container className="pb-16 pt-32 text-center sm:pb-24 sm:pt-44">
         <p className="inline-flex animate-fade-up items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-xs font-medium text-muted">
           <span aria-hidden="true" className="size-1.5 rounded-full bg-trust-400" />
-          {site.location}
+          {site.audience}
         </p>
 
         <h1
@@ -134,7 +134,7 @@ export function Hero() {
         <HeroPipeline />
 
         <div className="mx-auto mt-14 max-w-3xl animate-fade-up border-t border-white/[0.06] pt-8 [animation-delay:480ms]">
-          <p className="text-xs uppercase tracking-[0.16em] text-dim">Built for service businesses like</p>
+          <p className="text-xs uppercase tracking-[0.16em] text-dim">Made for local service businesses like</p>
           <ul className="mt-4 flex flex-wrap justify-center gap-2">
             {industries.map((industry) => (
               <li

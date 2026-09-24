@@ -4,8 +4,8 @@ type SiteConfig = {
   owner: string;
   /** Short, plain-language summary. Used for metadata and link previews. */
   description: string;
-  /** How and where I work. Shown in the hero and About. */
-  location: string;
+  /** Who the work is for. Shown in the hero badge. */
+  audience: string;
   /** Shown on the page and used as the contact form's fallback recipient. */
   email: string;
   /** Optional photo in /public, e.g. "/abdirahman.jpg". Leave empty to show an initial instead. */
@@ -24,8 +24,8 @@ export const site: SiteConfig = {
   tagline: "AI Automation & Business Systems",
   owner: "Abdirahman",
   description:
-    "I help service businesses stop losing customers between the first message and the follow-up. I build simple systems that capture every lead, organize the details, and draft a reply the owner approves.",
-  location: "Remote — working with businesses anywhere",
+    "I help local businesses stop losing customers between the first message and the follow-up. I build simple systems that capture every lead, organize the details, and draft a reply the owner approves.",
+  audience: "Built for local service businesses",
   email: "abdirahmansheikh413@gmail.com",
   photo: "",
   linkedin: "https://www.linkedin.com/in/abdirahman-sheikh-034185296/",
