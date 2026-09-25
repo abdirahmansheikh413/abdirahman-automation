@@ -1,4 +1,4 @@
-# Abdirahman Systems
+# Abdirahman Automation
 
 One-page site for a small AI automation and business systems service aimed at local businesses.
 Built with Next.js (App Router), TypeScript, and Tailwind CSS. No database, auth, or backend.

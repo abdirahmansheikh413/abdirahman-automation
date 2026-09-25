@@ -20,7 +20,7 @@ type SiteConfig = {
 };
 
 export const site: SiteConfig = {
-  name: "Abdirahman Systems",
+  name: "Abdirahman Automation",
   tagline: "AI Automation & Business Systems",
   owner: "Abdirahman",
   description:
